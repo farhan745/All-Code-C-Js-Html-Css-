@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    text-align: center;
+}
+#line-height1{
+    line-height: 1px;
+}
+#line-height2{
+    line-height: 30px;
+    font-weight: bolder;
+}
+#font-style{
+    font-style: italic;
+}
+#font-family{
+    font-family:'Dancing Script',cursive;
+    font-weight: bolder;
+}

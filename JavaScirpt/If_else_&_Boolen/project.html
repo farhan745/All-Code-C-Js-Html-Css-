@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button class="bat" onclick="
+  let cc=Math.random()*3;
+  let user=`You Choose Batting`;
+  let result;
+  if(cc>0 && cc<=1){
+    result='Computer Choice is Bat';
+  }
+  else if(cc>1 && cc<=2){
+    result='Computer Choice is Ball';
+  }
+  else{
+    result='Computer Choice is Stump';
+  }
+  alert(`${user} , ${result}`);
+  ">Bat</button>
+  <button class="ball"onclick="
+  let cc=Math.random()*3;
+  let user=`You Choose Balling`;
+  let result;
+  if(cc>0 && cc<=1){
+    result='Computer Choice is Bat';
+  }
+  else if(cc>1 && cc<=2){
+    result='Computer Choice is Ball';
+  }
+  else{
+    result='Computer Choice is Stump';
+  }
+  alert(`${user} , ${result}`);"
+  >Ball</button>
+  <button class="stump"onclick="
+  let cc=Math.random()*3;
+  let user=`You Choose Stumping`;
+  let result;
+  if(cc>0 && cc<=1){
+    result='Computer Choice is Bat';
+  }
+  else if(cc>1 && cc<=2){
+    result='Computer Choice is Ball';
+  }
+  else{
+    result='Computer Choice is Stump';
+  }
+  
+  alert(`${user} , ${result}`);">Stump</button>
+  <script>
+
+  </script>
+</body>
+</html>

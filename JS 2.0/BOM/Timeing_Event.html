@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timing Event</title>
+</head>
+<body>
+  <p id="id1"></p>
+  <p id="id2"></p>
+  <script>
+    let timeout = document.getElementById("id1");
+    setTimeout(()=>{
+      timeout.innerHTML="3 seconds over!";
+    },3000);
+    let interval = document.getElementById("id2");
+    setInterval(()=>{
+      interval.innerHTML=new Date().toLocaleTimeString();
+    },1000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event</title>
+</head>
+<body>
+  <button id="my-button" >Click Me</button>
+  <script>
+    let buttonElement = document.querySelector('#my-button');
+    let behaviour= event=>{
+      console.log('I am clicked');
+    }
+    buttonElement.addEventListener('click', behaviour);
+    let printDate=event=>{
+      console.log(new Date());
+    }
+    let random=(number)=>{
+   Math.floor(Math.random() * (number + 1));
+}
+    let chanceColor=event=>{
+      const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+    }
+    buttonElement.addEventListener("click", changeColor);
+    buttonElement.removeEventListener('click',behaviour)
+  </script>
+</body>
+</html>

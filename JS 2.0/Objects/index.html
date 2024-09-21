@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    let newSymb=Symbol('Key1');
+    let mobile={
+      brand: 'Samsung',
+      model: 'Galaxy S24',
+      price: 1000,
+      color: 'black',
+      processor:'Snapdragon Gen 3',
+      camera:['200MP','12MP','12MP'],
+      hasZoomCamera:true,
+      [newSymb]:'MyKey1',
+      brandModel:function(){
+        return `Mobile Brand is ${this.brand} &model is ${this.model}`
+      },
+    };
+    // console.log(mobile.brand,mobile.model);
+    // console.log(mobile['hasZoomCamera']);
+    // console.log(mobile[newSymb]);
+    // console.log(Object.keys(mobile));
+    console.log(mobile.brandModel());
+    let obj1={
+      a:1,
+      b:2,
+      c:3,
+    }
+    let obj2={
+      d:4,
+      e:5,
+      f:6,
+    }
+    //let objFinal=Object.assign(obj1,obj2);
+    let objFinal={...obj1,...obj2};
+    
+    console.log(objFinal);
+
+    //Constructor Object
+    function Person(name,age){
+      this.name=name;
+      this.age=age;
+    }
+    let person1=new Person('John',25);
+    let person2=new Person('Don',32);
+    console.log(person1);
+    console.log(person2age);
+  </script>
+</body>
+</html>

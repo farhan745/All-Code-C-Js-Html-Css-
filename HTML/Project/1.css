@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    line-height: 1.4;
+    font-weight:300 ;
+    height: 100%;
+}
+.img1{
+    height: 100%;
+    background-image: url(https://github.com/anshuopinion/10-Practice-Project-Html-CSS/blob/Project-4-Landing-Page/Project%204/images/developer.png?raw=true);
+    background-repeat: no-repeat;
+    min-width: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.text{
+    color: white;
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lg{
+    font-weight: 100; 
+    font-size: 72px;
+}
+.full_text{
+    font-weight: 100; 
+    font-size: 72px;
+}
+.blackbox{
+    color: white;
+    background-color: #000;
+    padding: 20px;
+}
+.blackbox p{
+    font-size: 72px;
+    color: white;
+    font-weight:-100;
+    text-align: center;
+
+}
+.blackbox p span{
+    font-weight: 400;
+    font-size: 96px;
+}
+.work{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) ;
+}
+.card{
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px;
+}

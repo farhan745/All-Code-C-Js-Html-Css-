@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Learning 2.0</title>
+</head>
+<body>
+  <script>
+    //De-Structure
+    let course ={
+      name: "JSON Learning 2.0",
+      price:'1000',
+      author: 'John Doe',
+    };
+    let{author,price}=course;
+    console.log(`Author: ${author} 
+     Price: ${price}$`);
+
+     //JSON:
+     let json={
+      name:"JavaScript Object Notation",
+      price:5000,
+      rating:{
+        stars:5,
+        votes:1000,
+        review:578,
+      }
+     };
+     console.log(json);
+     let str=JSON.stringify(json);//Make String Object
+     console.log(json['name']);//string declear
+
+     let newStr=JSON.parse(str) ;
+     console.log(typeof newStr);//Become String to Object
+
+     //Local Storage
+     localStorage.setItem('Name','Farhan');
+     localStorage.setItem('Age', 25);
+     localStorage.setItem('Email', 'farhan@gmail.com');
+     console.log(localStorage.getItem('Age'));
+
+     let product={
+      name:'Laptop',
+      price:59999,
+      rating:{
+        stars:5,
+        review:453,
+      }
+     };
+     localStorage.setItem('product',JSON.stringify(product));
+     console.log(localStorage.getItem('product'));
+     localStorage.removeItem('Email');
+     //localStorage.clear();
+
+  </script>
+</body>
+</html>

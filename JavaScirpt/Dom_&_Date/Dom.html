@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Elements</title>
+</head>
+<body>
+  <button class="my-button">button </button><br><hr>
+  <div class="my-div">This is div</div>
+  <script>
+    /*
+    1.document.location;
+    2.document.title;
+    3.document.domain;->'127.0.0.1'
+    4.document.body.innerHTML='<h1>Welcome</h1>';
+    5.document.body.innerText='<h1>Welcome</h1>'+'<h2>to
+      6.document.querySelector('button').classList.add('your-button');
+
+      Method:
+      1.document.body.getElementsById()
+      2.document.body.getElementsByClassName()
+      3.document.querySelector('.my-div').appendChild(button);
+      4.document.querySelector('.my-div').removeChild(button);
+      
+    */
+   let button = document.createElement('Button');
+   button.innerText='My button';
+   document.querySelector('.my-div').appendChild(button);//Add Button
+   document.querySelector('.my-div').removeChild(button);//Remove Button
+  </script>
+</body>
+</html>

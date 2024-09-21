@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Event Listener</title>
+</head>
+<body>
+  <button id="myBtn" onclick="myFun()" style="cursor:pointer;">Click Me</button><br>
+  <button id="myBtn2" onclick="remove()" style="cursor:pointer;">Remove Mouse Over</button><hr><br>
+  <script>
+    let button = document.getElementById("myBtn");
+    let button1 = document.getElementById("myBtn2");
+    function Click(){
+      console.log("Clicked");
+    }
+    function myFun(){
+      button.addEventListener("click",
+      Click);
+    }
+    function remove(){
+
+      button1.removeEventListener("click",function(){
+        Click();
+      })
+    }
+    
+  </script>
+</body>
+</html>

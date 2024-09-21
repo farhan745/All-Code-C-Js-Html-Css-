@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>setTimeout_setInterval</title>
+</head>
+<body>
+  <script>
+    let alarm=()=>
+      console.log(`Good Morning ${new Date()}`);
+   
+    // setTimeout(alarm,2000)//milisecend count
+    // console.log('Shuvu Shokal');
+
+    //Timer ID
+    let timerID=setTimeout(alarm,8000);
+    console.log(`Alarm Set with Timer ID: ${timerID}`);
+    //ClearTimeout[clearTimeout(timerID)]->vanish
+    
+    //SetInterval
+    let intervalID=setInterval(alarm,1000);
+    setTimeout(()=>clearInterval(intervalID),5000);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* We See The all Properties of Css3 */
+/* See any properties go to http://developer.mozilla.org/ */
+*{              /*Universal Selector */
+    margin: 10px;
+    padding: 10px;
+}
+#Box1{
+    background-image: url(images.jpeg);
+    background-repeat:no-repeat;
+    height: 100px;
+    width: 100%;
+    background-size:contain ;
+    background-position:top;
+    
+}
+#Box2{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+}
+#Box3{
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+}

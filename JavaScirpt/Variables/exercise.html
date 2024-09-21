@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+  <style>
+    .bag{
+      background-color: rgb(172, 245, 172);
+      border:none;
+      padding:8px 15px;
+      border-radius: 10px;
+    }
+    .wish{
+      border-radius: 8px;
+      padding:5px 30px;
+    }
+  </style>
+</head>
+<body>
+  <fieldset>
+  <button class="bag" onclick="a++;document.querySelector('#cart').innerText=`Your Bag has ${a} items`;">Add to Bag</button>
+  <button class="wish" onclick="a--;document.querySelector('#cart').innerText=`Your Bag has ${a} items`;">MOVE TO WISHLIST</button>
+  <button class="bag" onclick="a+=2;document.querySelector('#cart').innerText=`Your Bag has ${a} items`;">Add 1+1 sale item</button>
+  <h1 id="cart"></h1>
+</fieldset>
+  <script>
+    let a=0;
+    document.querySelector('#cart').innerText=`Your Bag has ${a} items.`;
+    
+  </script>
+</body>
+</html>

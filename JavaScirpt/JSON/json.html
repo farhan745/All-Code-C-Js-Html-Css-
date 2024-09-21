@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json</title>
+  </head>
+  <body>
+    <script>
+      // let pro={
+      //   name:'Tshirt',
+      //   price:789,
+      //   rating:{
+      //     stars:4.5,
+      //     noOfreview:354,
+      //   },
+      // }
+      // console.log(typeof pro);
+      // console.log(pro);
+      // let str = JSON.stringify(pro);
+      // console.log(typeof str);
+      // console.log(str);
+
+      // let newPro = JSON.parse(str);
+      // console.log(typeof newPro);
+      // console.log(newPro);
+      // localStorage.setItem('Name','Farhan');
+      // localStorage.setItem('Price','11500');
+      // localStorage.setItem('Form','Chittagong');
+      console.log(localStorage.getItem("Name"));
+      let pro = {
+        name: "Tshirt",
+        price: 789,
+        rating: {
+          stars: 4.5,
+          noOfreview: 354,
+        },
+      };
+       let str = JSON.stringify(pro);
+       localStorage.setItem('str',str);
+      console.log(localStorage.getItem('str',str));
+     
+    </script>
+  </body>
+</html>

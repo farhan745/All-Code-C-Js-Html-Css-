@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Prototype</title>
+</head>
+<body>
+  <script>
+    function Name(first,last){
+      this.first = first;
+      this.last = last;
+    }
+    Name.prototype.age=20;
+    console.dir(Name);
+    console.log(Name);
+    let name1=new Name('John','Doe',30);
+    console.log(name1);
+    console.dir(name1);
+  </script>
+</body>
+</html>

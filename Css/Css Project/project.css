@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.hero_wrapper{
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Times New Roman', Times, serif;
+}
+.form_code{
+    text-align: center;
+}
+.form_code .post_code{
+    display: block;
+    width: 80%;
+    margin:auto;
+    border-radius: 15px;
+    padding: 10px;
+    border:none;
+}
+.form_code button{
+ background-color: skyblue;
+ height: 30px;
+ width: 30%;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ border:none;
+ border-radius: 10px;
+}

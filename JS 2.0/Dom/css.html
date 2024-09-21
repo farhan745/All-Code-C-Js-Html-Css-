@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <p id="demo">Hello World!</p>
+  <script>
+    let alarm=()=>{
+      console.log(new Date());
+    }
+
+    setInterval(function(){
+      let p=document.querySelector("#demo");
+    p.style.color='red';
+    p.style.fontSize='50px';
+    p.style.fontFamily='Roboto Slab'
+    },2000)
+    // setInterval(alarm,2000);
+
+</script>
+</body>
+</html>

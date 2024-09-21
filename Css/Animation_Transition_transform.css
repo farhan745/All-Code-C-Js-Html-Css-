@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pseudo{
+    height: 75px;
+    width: 250px;
+    border: 2px solid black;
+    background-color: green;
+    border-radius:10px ;
+    font-size: xx-large;
+
+}
+.pseudo:hover{
+    background-color: yellow;
+}
+.pseudo:active{
+    background-color: red;
+}
+.Trans{
+    height: 55px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: lightgreen;
+    border-radius:10px ;
+    font-size: large;
+    transition:all .3s ease-in-out 0s;
+}
+.Trans:hover{
+    height: 65px;
+    width: 250px;
+    background-color: yellow;
+}
+.Trans:active{
+    height: 65px;
+    width: 250px;
+    background-color: red;
+}
+.box{
+    height: 75px;
+    width: 75px;
+    border:5px solid black;
+    border-radius: 10px;
+    background-color: plum;
+    position: relative;
+    top:50px;
+    left:50px;
+    transition: all .7s ease-in-out 0s;
+}
+.box:hover{
+    border:5px solid black;
+    position: relative;
+    top:50px;
+    left:50px;
+    transform: rotatez(45deg);
+    background-color: aqua;
+}
+.scale{
+    height: 75px;
+    width: 75px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: lime;
+    position: relative;
+    top:50px;
+    left:50px;
+    transition: all .7s ease-in-out 0s;
+}
+.scale:hover{
+    background-color: lightcoral;
+    transform: scale(2);
+}
+.translate{
+    height: 75px;
+    width: 75px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color:palegreen;
+    position: relative;
+    top:50px;
+    left:50px;
+    transition: all .7s ease-in-out 0s; 
+}
+.translate:hover{
+    background-color: lightcoral;
+    transform: translate(200px,200px);
+}
+.skew{
+    height: 75px;
+    width: 75px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color:royalblue;
+    position: relative;
+    top:50px;
+    left:50px;
+    transition: all .7s ease-in-out 0s; 
+}
+.skew:hover{
+    background-color:springgreen;
+    transform: skew(20deg,30deg) ;
+}
+.anibox{
+    height: 75px;
+    width: 75px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color:burlywood;
+    position: relative;
+    top:10px;
+    left:10px;
+    animation-name:ghumakkad ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes ghumakkad {
+    0%{left:10px;}
+    25%{bottom: 100px;}
+    50%{left:200px;}
+    75%{top: 100px;}
+    100%{right:210px;}
+    
+}

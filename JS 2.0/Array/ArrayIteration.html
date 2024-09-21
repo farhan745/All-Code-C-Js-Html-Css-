@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Iteration</title>
+</head>
+<body>
+  <script>
+    let arr=[1,2,3,4,5,6,7,8,9]
+    arr.forEach(num=>{
+      console.log(num*num)
+    })
+    //Array.map
+    let arr2=[1,2,3,4,5,6,7,8];
+    let  newarr2=arr2.map(num=>{
+      return num*2;
+    })
+    console.log(newarr2);
+    //Array filter
+    let arr3=[1,2,3,4,5,6,7,8];
+    newarr3=arr.filter((num,index)=>{
+      return num%2==0;
+    })
+    console.log(newarr3);
+    //Array Reduce
+    let arr4=[1,2,3,4,5,6,7,8];
+    let sum=arr4.reduce((total,num)=>{
+      return total+num;
+    })
+    console.log(sum);
+    //Array Every
+    let arr5=[1,2,3,4,5,6,7,8]
+    let check=arr5.every(num=>{
+      return num>2;
+    })
+    console.log(check);
+    //Array Some
+    let arr6=[1,2,3,4,5,6,7,8];
+    let check1=arr6.some(num=>{
+      return num>2;
+      })
+      console.log(check1);
+      //Array indexOf
+      let fruits=['Apples','Orange'];
+      let index=fruits.indexOf('Orange');
+      console.log(index+1);
+
+      //Array find
+      let arr7=[1,2,3,4,5,6,7,8];
+      
+      let find=arr7.find(num=>{
+         num>6;
+        })
+        console.log(find);
+        //Array form
+        let str=Array.from('ABCDEF');
+        console.log(str);
+  </script>
+</body>
+</html>

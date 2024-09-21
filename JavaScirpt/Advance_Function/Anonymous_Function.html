@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Function</title>
+  </head>
+  <body>
+    <script>
+      let sum = function (a, b) {
+        return a + b;
+      };
+      let newSum=sum;
+      console.log(newSum(10,20));
+      console.log(sum(10,20));
+      let threeSum=function(a,b,c,sumTwovalue){
+        let sum1=sumTwovalue(a,b);
+        return sumTwovalue(sum1,c);
+      }
+      console.log(threeSum(10,20,30,sum));
+    </script>
+  </body>
+</html>

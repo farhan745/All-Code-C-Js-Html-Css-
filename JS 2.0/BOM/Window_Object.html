@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Object</title>
+  </head>
+  <body>
+    <p id="id1"></p>
+    <button id="id2" onclick="inside()">Click Me</button>
+    <button onclick="closeWin()">Close</button>
+    <script>
+      let con = document.getElementById("id1");
+      con.innerHTML =
+        "Width: " +
+        window.innerWidth +
+        "px<br>" +
+        "Height:  " +
+        window.innerHeight +
+        "px<br>";
+      if (window.innerHeight > 500) {
+        document.querySelector("#id1").style.background = "aqua";
+      } else {
+        document.querySelector("#id1").style.background = "blue";
+      }
+      let Open;
+      function inside() {
+        Open= window.open("https://mlwbd.me/", "Self");
+      }
+      function closeWin() {
+        Open.close();
+      }
+    </script>
+  </body>
+</html>

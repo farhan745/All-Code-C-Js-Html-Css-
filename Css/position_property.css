@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    height:200%;
+}
+.B{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    
+}
+#Box1{
+    position: static;
+} 
+#Box2{
+    position: relative;
+    top: 10px;
+    left: 50px;
+    background-color: chartreuse;
+}
+#Box3{
+    position: absolute;
+    top:20px;
+    background-color: red;
+}
+#Box4{
+    position: fixed;
+    background-color: aqua;
+    right:20px;
+}

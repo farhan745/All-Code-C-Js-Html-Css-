@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShortCut</title>
+</head>
+<body>
+  <script>
+    let pro={
+      name:"sachin",
+      age:20,
+      address:"pune"
+    };
+    //Destructuring
+    let {name,age,address}=pro;
+    console.log(name,age,address);
+    let pro1={
+      name:'Rahul',
+      age:31,
+      address:'Mumbai',
+      display(){
+        return `My Name Is ${this.name}.I'm ${this.age}.I'm form ${this.address}.`;
+      }
+    };
+
+    console.log(pro1.display());
+  </script>
+</body>
+</html>

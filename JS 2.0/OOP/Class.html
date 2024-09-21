@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object-Oriented Programming</title>
+  <style>
+    h3{
+      text-align: center;
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+    <h1>
+      Object-Oriented Programming
+    </h1>
+    <h3>Class</h3>
+    <hr>
+  <script> 
+  class Computer{
+    constructor(name,model){
+      this.name = name;
+      this.model = model;
+    }
+    aboutComputer(){
+      console.log(`This is ${this.name} and model name is ${this.model}`)
+    }
+  }
+  let dell=new Computer('Dell','Dsk23');
+  console.log(dell);
+  dell.aboutComputer();
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+</head>
+<body>
+  <script>
+    //1st
+    let arr=[5,6];
+    arr.unshift(4);
+    arr.push(7);
+    console.log(arr);
+    //2nd
+    function getElement(arr1,position){
+      console.log(arr1[position-1]);
+    }
+    let arr1 = [1,2,3,4,5,6,7,8,9];
+    getElement(arr1,5);
+    //3rd[slice]
+    let arr3=[4,5,6,7];
+    console.log(arr3.slice(0,3));
+
+    //prime
+    function isPrime(num){
+      for(let i=2;i<num;i++){
+        if(num%i==0){
+          return false;
+          }
+
+      }
+      return true;
+    }
+    let a=isPrime();
+    if(a===true){
+      console.log("prime");
+    }
+    else{
+      console.log("not prime");
+      }
+      //4th
+      let arr4=[1,2,3,4,5];
+      for(let i=arr4.length-1;i>=0;i--){
+
+        console.log(arr4[i]);
+      }
+      //5th
+      let arr5=[1,-6,5,7,-98];
+      let arrp=[];
+      for (let i = 0; i < arr5.length; i++) {
+        if(arr5[i]>0){
+          arrp.push(arr5[i]);
+        }
+      }
+      console.log(arrp);
+  </script>
+</body>
+</html>
